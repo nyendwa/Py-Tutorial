@@ -17,6 +17,7 @@ scale = Scale(
     length=600,              # Length of the scale in pixels
     tickinterval=10,         # Interval for tick marks on the scale
     resolution=0.01,         # Smallest step size for the slider
+    troughcolor='#69EAFF',
     orient=HORIZONTAL,       # Orientation of the scale (horizontal)
 )
 
