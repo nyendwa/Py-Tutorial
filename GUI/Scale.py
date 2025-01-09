@@ -11,7 +11,13 @@ def submit():
     print('The temperature is: ' + str(scale.get()) + ' degrees C')
 
 # Create a Scale widget with a range from 100 to 0 (slider moves downward)
-scale = Scale(window, from_=100, to=0)
+scale = Scale(window, from_=0,
+              to=100,
+              length=600,
+              tickinterval=10,
+              resolution=0.01,
+              orient=HORIZONTAL
+              )
 
 # Add the Scale widget to the window
 scale.pack()
